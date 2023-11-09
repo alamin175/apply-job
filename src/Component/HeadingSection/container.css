@@ -1,0 +1,15 @@
+.container{
+    display: flex;
+    margin: 10px 10px 0 60px;
+    
+}
+.container img{
+    height: 744px;
+    width: 816px;
+}
+.container span{
+    color: #7E90FE;
+}
+.job-details{
+    margin-top: 40px;
+}

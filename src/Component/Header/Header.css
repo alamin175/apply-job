@@ -1,0 +1,19 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+button{
+    background-color: #7E90FE;
+    height: 55px;
+    width: 190px;
+    margin: 20px;
+    color: white;
+}
+.header a{
+    margin-right: 25px;
+}
+.header h1{
+    margin-left: 60px;
+}
