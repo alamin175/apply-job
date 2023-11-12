@@ -1,0 +1,44 @@
+.container{
+    display: flex;
+    margin: 10px 10px 0 60px;
+    
+}
+.container img{
+    height: 744px;
+    width: 816px;
+}
+.container span{
+    color: #7E90FE;
+}
+.job-details{
+    margin-top: 40px;
+}
+.job-headline{
+    text-align: center;
+    margin: 130px 0 35px 0;
+}
+
+.category{
+    background-color: rgba(126, 144, 254, 7%);
+    height: 245px;
+    width: 311px;
+    border-radius: 10px;
+    margin: 40px;
+}
+.category-list{
+    margin: 40px;
+}
+.category-list img{
+    background-color: rgba(126, 144, 254, 15%);
+    padding: 15px;
+    border-radius: 8px;
+}
+.category-list h4{
+    margin-bottom: 0;
+}
+.category-list p{
+    margin-top: 5px;
+}
+.flex-container{
+    display: flex;
+}

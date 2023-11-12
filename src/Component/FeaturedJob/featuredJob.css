@@ -1,0 +1,32 @@
+.featured-job{
+    border: 1px solid #757575;
+    padding: 40px;
+    border-radius: 8px;
+}
+.featured-job img{
+    max-width: 300px;
+    max-height: 60px;
+}
+.job-time{
+    display: flex;
+}
+.job-time p{
+    color: #7E90FE;
+    border: 1px solid #7E90FE ;
+    padding: 7px;
+    margin-right: 10px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.featured-job h3{
+    margin-top: 9px;
+    margin-bottom: 0;
+}
+.featured-job button{
+    margin: 0;
+    margin-bottom: 0;
+}
+.location{
+    display: flex;
+    gap: 25px;
+}

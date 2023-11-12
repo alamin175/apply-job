@@ -10,7 +10,11 @@ import Header from './Component/Header/Header.jsx';
 import Statistics from './Component/Statistics/Statistics.jsx';
 import Applied from './Component/AppliedJobs/Applied.jsx';
 import Blogs from './Component/blogs/Blogs.jsx';
-import HeadingSection from './Component/HeadingSection/HeadingSection.jsx';
+import FullSection from './Component/FullSection/FullSection.jsx';
+import JobCategory from './Component/job category/JobCategory.jsx';
+import job from './Loader/loader.js';
+import FeaturedJob from './Component/FeaturedJob/FeaturedJob.jsx';
+import JobDetails from './Component/Job Details/JobDetails.jsx';
 const router = createBrowserRouter([
   {
     path:'/',
@@ -18,7 +22,12 @@ const router = createBrowserRouter([
     children:[
       {
         path:'/',
-        element: <HeadingSection></HeadingSection>
+        element:<FullSection/>,
+        loader: job
+      },
+      {
+        path:'/',
+        element:<JobCategory></JobCategory>
       },
       {
         path:'statistics',
@@ -31,6 +40,16 @@ const router = createBrowserRouter([
       {
         path:'blogs',
         element: <Blogs></Blogs>
+      },
+      {
+        path:'feature',
+        element:<FeaturedJob></FeaturedJob>
+      },
+      {
+        path: 'job/:jobid',
+        element: <JobDetails></JobDetails>,
+        // loader: ({params}) => fetch(`https://jsonplaceholder.typicode.com/users/${params.jobid}`)
+        loader: ({params}) => fetch(`job.json/${params.jobid}`)
       }
     ]
   }
